@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Продукция</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="index.html">Главная</a></li>
+      <li><a href="products.html">Продукция</a></li>
+      <li><a href="about.html">О компании</a></li>
+    </ul>
+  </nav>
+  <main>
+  <h1>Наша продукция</h1>
+
+  <table>
+    <tr>
+      <th>Наименование</th>
+      <th>Тип</th>
+      <th>Стоимость: руб/м²</th>
+    </tr>
+    <tr>
+      <td>Хлопковая ткань</td>
+      <td>Джинсовая</td>
+      <td>235</td>
+    </tr>
+    <tr>
+      <td>Льняная ткань</td>
+      <td>Полотняная</td>
+      <td>138</td>
+    </tr>
+    <tr>
+      <td>Шелковая ткань</td>
+      <td>Шелк</td>
+      <td>4610</td>
+    </tr>
+    <tr>
+      <td>Шерстяная ткань</td>
+      <td>Твил</td>
+      <td>450</td>
+    </tr>
+    <tr>
+      <td>Полиэстер</td>
+      <td>Флис</td>
+      <td>257</td>
+    </tr>
+    <tr>
+      <td>Нейлоновая ткань</td>
+      <td>Нейлон</td>
+      <td>122</td>
+    </tr>
+    <tr>
+      <td>Акриловая ткань</td>
+      <td>Мохер</td>
+      <td>320</td>
+    </tr>
+  </table>
+
+  <form id="orderForm">
+    <label for="name">Имя:</label>
+    <input type="text" id="name" name="name" required><br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required><br>
+
+    <label for="product">Выбрать продукцию:</label>
+    <select id="product" name="product">
+      <option value="cotton">Хлопковая ткань</option>
+      <option value="linen">Льняная ткань</option>
+      <option value="silk">Шелковая ткань</option>
+      <option value="sherst">Шерстяная ткань</option>
+      <option value="poli">Полиэстер</option>
+      <option value="neylon">Нейлоновая ткань</option>
+      <option value="acril">Акриловая ткань</option>
+    </select><br>
+
+    <label for="quantity">Количество:</label>
+    <input type="number" id="quantity" name="quantity" required><br>
+
+    <button type="submit">Заказать</button>
+  </form>
+
+  <div id="message"></div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
